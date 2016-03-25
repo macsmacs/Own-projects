@@ -1,9 +1,6 @@
 package com.callcenter;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-/**
- * Created by Роман on 20.03.2016.
- */
 abstract class Call {
     private long tel;
     private Date time;
