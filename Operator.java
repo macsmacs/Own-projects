@@ -1,9 +1,6 @@
 package com.callcenter;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-/**
- * Created by Роман on 18.03.2016.
- */
 class Operator {
     private final String name;
     private final short id;
