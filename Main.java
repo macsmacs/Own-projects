@@ -85,19 +85,19 @@ public class Main {
     private static void printFreeOperators(){
         if(!listOfFreeOperator.isEmpty()) System.out.println("\t\t\t\t\t\tСВОБОДНЫЕ ОПЕРАТОРЫ");
         for (Operator operator : listOfFreeOperator)
-            System.out.println(String.format("Оператор: %s. ID: %s. Статус: %s уже %s",
+            System.out.println(String.format("Оператор: %s. ID: %d. Статус: %s уже %s",
                     operator.getName(), operator.getId(), operator.getStatus(), operator.getTime()));
     }
     private static void printWaitingCalls(){
         if(!listOfWaitingCalls.isEmpty()) System.out.println("\t\t\t\t\t\tЗВОНКИ В ОЧЕРЕДИ");
         for (Call call : listOfWaitingCalls)
-            System.out.println(String.format("Категория: %s. Номер: %s. Статус: %s уже %s",
+            System.out.println(String.format("Категория: %s. Номер: %d. Статус: %s уже %s",
                     call.getCapture(), call.getTel(), call.getStatus(), call.getTime()));
     }
     private static void printProcessingCalls(){
         if(!listOfProcessingCalls.isEmpty()) System.out.println("\t\t\t\t\t\tОБРАБОТКА ЗВОНКОВ");
         for (int i = 0; i < listOfProcessingCalls.size(); i++)
-            System.out.println(String.format("Оператор %s (%s) %s (%s) по тематике %s. Время: %s",
+            System.out.println(String.format("Оператор %s (%d) %s (%d) по тематике %s. Время: %s",
                     listOfBusyOperator.get(i).getName(), listOfBusyOperator.get(i).getId(),
                     listOfBusyOperator.get(i).getStatus(), listOfProcessingCalls.get(i).getTel(),
                     listOfProcessingCalls.get(i).getCapture(), listOfBusyOperator.get(i).getTime()));
